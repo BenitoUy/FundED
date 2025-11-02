@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Scholarships | FundED</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+      <div class="sidebar-logo">
+        <img src="img/logo.png" alt="FundED Logo" />
+      </div>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="dashboard.php"
+            ><i class="fa fa-tachometer-alt"></i> Dashboard</a
+          >
+        </li>
+        <li>
+          <a href="discover.html" class="active"
+            ><i class="fa fa-search"></i> Discover</a
+          >
+        </li>
+        <li>
+          <a href="community.php"><i class="fa fa-users"></i> Community</a>
+        </li>
+        <li>
+          <a href="create.php"
+            ><i class="fa fa-bullhorn"></i> Create Campaign</a
+          >
+        </li>
+        <li>
+          <a href="profile.php"><i class="fa fa-user"></i> Profile</a>
+        </li>
+        <li>
+          <a
+            href="logout.php"
+            onclick="return confirm('Are you sure you want to sign out?');"
+            ><i class="fa fa-sign-out-alt"></i> Sign Out</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Sidebar End -->
+    <header class="create-header">
+      <div class="header-content">
+        <h1>Discover</h1>
+      </div>
+    </header>
+
+    <!-- Main Content Start -->
+    <div class="main-content">
+      <div class="container py-5">
+        <!-- Filters -->
+        <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+          <input
+            type="text"
+            class="form-control w-auto"
+            placeholder="Search here"
+          />
+          <select class="form-select w-auto">
+            <option>Entry Level</option>
+            <option>College</option>
+            <option>Graduate</option>
+          </select>
+          <select class="form-select w-auto">
+            <option>Status</option>
+            <option>Open</option>
+            <option>Closed</option>
+          </select>
+        </div>
+
+        <!-- Scholarships Grid -->
+        <div class="row g-4">
+          <!-- 1 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s1.png" class="card-img-top" alt="UniFAST" />
+              <div class="card-body">
+                <h5 class="card-title">UniFAST</h5>
+                <p class="card-subtitle mb-2 text-muted">
+                  Tertiary Education Subsidy (TES)
+                </p>
+                <p><strong>₱40,000 - ₱60,000</strong> per year</p>
+                <p>
+                  A grant-in-aid program for students enrolled in SUCs, LUCs,
+                  and Private HEIs.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s2.png" class="card-img-top" alt="CHED" />
+              <div class="card-body">
+                <h5 class="card-title">CHED Scholarship Program</h5>
+                <p class="card-subtitle mb-2 text-muted">Merit Scholarship</p>
+                <p><strong>₱80,000 - ₱120,000</strong> per year</p>
+                <p>
+                  For qualified students entering their first year of college in
+                  recognized HEIs.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s3.jpg" class="card-img-top" alt="GSIS" />
+              <div class="card-body">
+                <h5 class="card-title">GSIS Educational Subsidy Program</h5>
+                <p class="card-subtitle mb-2 text-muted">Educational Subsidy</p>
+                <p><strong>₱10,000</strong> per year</p>
+                <p>
+                  Provides academic financial support to dependents of GSIS
+                  members.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s4.jpg" class="card-img-top" alt="DA" />
+              <div class="card-body">
+                <h5 class="card-title">DA Educational Assistance</h5>
+                <p class="card-subtitle mb-2 text-muted">For the Youth</p>
+                <p><strong>₱74,000+</strong> per year</p>
+                <p>
+                  For children of small-scale farmers and fishers pursuing
+                  agricultural careers.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s5.png" class="card-img-top" alt="DSWD" />
+              <div class="card-body">
+                <h5 class="card-title">DSWD Educational Assistance Program</h5>
+                <p class="card-subtitle mb-2 text-muted">Financial Aid</p>
+                <p><strong>₱1,000 - ₱5,000</strong> per year</p>
+                <p>
+                  Provides financial aid to indigent students in elementary,
+                  high school, and college.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s6.jpg" class="card-img-top" alt="OWWA" />
+              <div class="card-body">
+                <h5 class="card-title">OWWA Scholarship Program</h5>
+                <p class="card-subtitle mb-2 text-muted">
+                  Skills for Employment
+                </p>
+                <p><strong>₱14,500</strong> per course</p>
+                <p>
+                  For active OWWA members or their dependents studying in
+                  accredited training centers.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s7.jpg" class="card-img-top" alt="DepEd" />
+              <div class="card-body">
+                <h5 class="card-title">DepEd Scholarship Grant</h5>
+                <p class="card-subtitle mb-2 text-muted">Teacher Training</p>
+                <p><strong>₱50,000+</strong> per year</p>
+                <p>
+                  Supports teachers pursuing graduate education and teaching
+                  innovation programs.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s8.jpg" class="card-img-top" alt="DOST" />
+              <div class="card-body">
+                <h5 class="card-title">DOST-SEI Undergraduate Scholarship</h5>
+                <p class="card-subtitle mb-2 text-muted">
+                  Science & Technology
+                </p>
+                <p><strong>₱80,000+</strong> per year</p>
+                <p>
+                  For STEM students with outstanding academic records and
+                  science potential.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s9.png" class="card-img-top" alt="TESDA" />
+              <div class="card-body">
+                <h5 class="card-title">TESDA Training for Work Scholarship</h5>
+                <p class="card-subtitle mb-2 text-muted">
+                  Technical-Vocational
+                </p>
+                <p><strong>₱10,000+</strong> per course</p>
+                <p>
+                  For individuals taking technical and vocational training
+                  programs under TESDA.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s10.jpg" class="card-img-top" alt="Pag-IBIG" />
+              <div class="card-body">
+                <h5 class="card-title">Pag-IBIG Educational Loan</h5>
+                <p class="card-subtitle mb-2 text-muted">Financial Support</p>
+                <p><strong>₱10,000 - ₱60,000</strong> per semester</p>
+                <p>
+                  Low-interest student loan program for Pag-IBIG members and
+                  dependents.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s11.jpg" class="card-img-top" alt="PhilHealth" />
+              <div class="card-body">
+                <h5 class="card-title">PhilHealth Scholarship Grant</h5>
+                <p class="card-subtitle mb-2 text-muted">
+                  Healthcare Assistance
+                </p>
+                <p><strong>₱15,000</strong> per year</p>
+                <p>
+                  Supports dependents of active PhilHealth members enrolled in
+                  health-related courses.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12 -->
+          <div class="col-md-4">
+            <div class="card scholarship-card h-100">
+              <img src="img/s12.jpg" class="card-img-top" alt="BSP" />
+              <div class="card-body">
+                <h5 class="card-title">BSP Financial Literacy Scholarship</h5>
+                <p class="card-subtitle mb-2 text-muted">Economics & Finance</p>
+                <p><strong>₱30,000</strong> per year</p>
+                <p>
+                  Encourages students pursuing economics and finance degrees to
+                  promote literacy.
+                </p>
+                <button class="btn btn-danger w-100">View & Apply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
